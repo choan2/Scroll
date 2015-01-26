@@ -4,8 +4,6 @@ Scroll 이벤트를 이용한 예제를 공부합니다.
 ####  $.scroll() - "scroll" JavaScript 이벤트를 바인딩 하거나 요소에 발생시킵니다.
 scroll 이벤트는 스크롤이 움직일 때 발생합니다. 이것은 window 객체에서 제공됩니다. 또한 스크롤이 가능한 프레임이나 overflow CSS 속성이 있는 요소의 scroll (또는 auto 속성) 에서도 발생합니다..
 ```
-HTML
-
 <div id="target" style="overflow: scroll; width: 200px; height: 100px;">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit,
   sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -22,7 +20,6 @@ HTML
 <div id="log"></div>
 ```
 ```
-script
 $( "#target" ).scroll(function() {
   $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
 });
