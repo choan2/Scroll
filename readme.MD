@@ -4,8 +4,6 @@ Scroll 이벤트를 이용한 예제를 공부합니다.
 ####  $.scroll() - "scroll" JavaScript 이벤트를 바인딩 하거나 요소에 발생시킵니다.
 scroll 이벤트는 스크롤이 움직일 때 발생합니다. 이것은 window 객체에서 제공됩니다. 또한 스크롤이 가능한 프레임이나 overflow CSS 속성이 있는 요소의 scroll (또는 auto 속성) 에서도 발생합니다..
 ```
-HTML
-
 <div id="target" style="overflow: scroll; width: 200px; height: 100px;">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit,
   sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -22,7 +20,6 @@ HTML
 <div id="log"></div>
 ```
 ```
-script
 $( "#target" ).scroll(function() {
   $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
 });
@@ -129,6 +126,9 @@ overflow:auto;
 - - -
 
 ##세로 패럴락스 예제
+예제는 배경 이미지인 별과 가운데에 있는 지구, 그리고 "parallax"라고 씌어진 이미지들로 구성되어 있습니다. 이 요소들을 스크롤을 했을때 각각 다른 속도로 ==세로 이동==을 하도록 코딩해봅시다.
+
 ##가로 패럴락스 예제
+예제는 컨텐츠 영역, 뒤에 배경으로 먼 산, 가까운 산. 이렇게 세 부분으로 나뉘어 있습니다. 이 요소는 스크롤을 이용하면 요소들을 ==가로 이동==하도록 코딩해봅시다.
 ##무한 스크롤 예제
 ##이미지 변경 예제
