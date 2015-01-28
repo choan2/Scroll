@@ -17,13 +17,14 @@ Scroll 이벤트를 이용한 예제를 공부합니다.
 
 ##세로 패럴락스 예제
 예제는 배경 이미지인 별과 가운데에 있는 지구, 그리고 "parallax"라고 씌어진 이미지들로 구성되어 있습니다.
-1. 스크롤 시 각각 다른 속도로 **세로 이동**을 하도록 코딩해봅시다.[scroll_01.html](http://choan616.dothome.co.kr/study/scroll/scroll_01/scroll_01.html)
+
+2. 스크롤 시 각각 다른 속도로 **세로 이동**을 하도록 코딩해봅시다.[scroll_01.html](http://choan616.dothome.co.kr/study/scroll/scroll_01/scroll_01.html)
 
 ##가로 패럴락스 예제
 예제는 컨텐츠 영역, 뒤에 배경으로 먼 산, 가까운 산. 이렇게 세 부분으로 나뉘어 있습니다. 
 
 1. 요소들을 **가로 이동**하도록 코딩해봅시다.[scroll_02.html](http://choan616.dothome.co.kr/study/scroll/scroll_02/scroll_02.html)
-2. HTML5의 data 속성을 이용하여 애니메이션 되도록 코딩해봅시다.
+2. HTML5의 data 속성을 이용하여 애니메이션 되도록 코딩해봅시다.[scroll_03.html](http://choan616.dothome.co.kr/study/scroll/scroll_02/scroll_03.html)
 
 ##무한 스크롤 예제
 페이지를 가장 아래로 스크롤 하면 내용이 계속 로딩이 되도록 무한 스크롤을 코딩해봅시다.
