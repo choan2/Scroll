@@ -7,7 +7,7 @@ Scroll 이벤트를 이용한 예제를 공부합니다.
 
 ####  .scrollLeft()
 1. scrollLeft(): 수평(가로) 스크롤의 위치는 픽셀 수치입니다. 스크롤바가 아주 왼쪽에 있거나 더이상 스크롤이 되지 않으며 그 수치는 0이 됩니다.[scroll03.html](http://choan616.dothome.co.kr/study/scroll/scroll_00/scroll03.html)
-2. scrollLeft(가로스크롤값)- 조건에 일치하는 요소들의 수평 스크롤의 위치를 value값으로 세팅합니다.[scroll04.html](http://choan616.dothome.co.kr/study/scroll/scroll04.html)
+2. scrollLeft(가로스크롤값)- 조건에 일치하는 요소들의 수평 스크롤의 위치를 value값으로 세팅합니다.[scroll04.html](http://choan616.dothome.co.kr/study/scroll/scroll_00/scroll04.html)
 
 #### .scrollTop()
 1. 조건에 일치하는 요소들 중 첫번째 요소의 스크롤바의 수직 위치(y좌표)를 얻을 수 있습니다.[scroll05.html](http://choan616.dothome.co.kr/study/scroll/scroll_00/scroll05.html)
