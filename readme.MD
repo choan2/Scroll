@@ -27,7 +27,7 @@ Scroll 이벤트를 이용한 예제를 공부합니다.
 2. HTML5의 data 속성을 이용하여 애니메이션 되도록 코딩해봅시다.[scroll_03.html](http://choan616.dothome.co.kr/study/scroll/scroll_02/scroll_03.html)
 
 ##무한 스크롤 예제
-페이지를 가장 아래로 스크롤 하면 내용이 계속 로딩이 되도록 무한 스크롤을 코딩해봅시다.[infinite_scroll.html](http://choan616.dothome.co.kr/study/scroll/scroll_03/infinite_scroll.html)
+페이지를 가장 아래로 스크롤 하면 내용이 ==계속 로딩==이 되도록 무한 스크롤을 코딩해봅시다.[infinite_scroll.html](http://choan616.dothome.co.kr/study/scroll/scroll_03/infinite_scroll.html)
 
 ##이미지 변경 예제
-스크롤에 따라 연속적인 이미지를 플립북 애니메이션처럼 재생이 되도록 코딩해봅시다.
+스크롤에 따라 연속적인 이미지를 ==플립북 애니메이션==처럼 재생이 되도록 코딩해봅시다.[flip_animation.html](http://choan616.dothome.co.kr/study/scroll/scroll_04/flip_animation.html)
