@@ -14,7 +14,7 @@ Scroll 이벤트를 이용한 예제를 공부합니다.
 2. scrollTop( value )- 조건에 일치하는 요소들의 수직 스크롤의 위치를 value값으로 세팅합니다.[scroll06.html](http://choan616.dothome.co.kr/study/scroll/scroll_00/scroll06.html)
 
 - - -
-
+##마우스 휠 이벤트와 스크롤 이벤트의 차이?
 ##세로 패럴락스 예제
 예제는 배경 이미지인 별과 가운데에 있는 지구, 그리고 "parallax"라고 씌어진 이미지들로 구성되어 있습니다.
 
