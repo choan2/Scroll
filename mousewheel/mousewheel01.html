@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>마우스 휠 이벤트 제어하기
+	</title>
+	<script src="enclose.js"></script>
+	<script>
+	window.onload = function () {
+		enclose(document.getElementById("content"),400,200,-200,-300);
+	}
+	</script>
+	<style>
+	div.enclosure {border:10px solid black; margin:10px;}</style>
+</head>
+<body>
+	<div class="enclosure"><img src="../../scroll/scroll_01/img/earth.png" alt="" id="content"></div>
+
+</body>
+</html>

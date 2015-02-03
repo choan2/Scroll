@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<div id="container">
+    <div class="contents">
+        <ul class="listContainer">
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+        </ul>
+    </div> 
+</div>
+<script>
+	(function($) {
+    $(document).ready(function() {
+        var MOVE_POSY_PER_MOUSE_WHEEL = 20; //move position y pixel per mouse wheel scroll
+     
+        var _$contents = $(".contents");
+        var _$listContainer = $(".listContainer");
+    
+        _$contents.bind("mousewheel DOMMouseScroll", contentsMouseEventHandler);
+
+        function contentsMouseEventHandler($evt) {
+            $evt.preventDefault();
+            switch($evt.type) {
+                case "mousewheel" :
+                    console.log("$evt.originalEvent.wheelDelta :", $evt.originalEvent.wheelDelta);
+                case "DOMMouseScroll" :
+                    //console.log("$evt.originalEvent.detail :", $evt.originalEvent.detail);
+                    //FF. DOMMouseScroll. down - detail: 3
+                    //Chrome. mousewheel. down - wheelDelta: -120
+                    //IE8. mousewheel. down - wheelDelta: -120
+                    //safari. mousewheel. down - wheelDelta: -120
+                    var delta = -$evt.originalEvent.wheelDelta || $evt.originalEvent.detail;
+                    var movePosYPerMouseWheel = (delta > 0) ? MOVE_POSY_PER_MOUSE_WHEEL : -MOVE_POSY_PER_MOUSE_WHEEL;
+                    var scrollEnableDistance = _$listContainer.height() - _$contents.height();
+
+                    var targetPosY = parseInt(_$listContainer.css("top")) - movePosYPerMouseWheel;
+                    if(targetPosY < -scrollEnableDistance) targetPosY = -scrollEnableDistance;
+                    if(targetPosY > 0) targetPosY = 0;
+ 
+                    _$listContainer.css("top", targetPosY);
+                break;
+            }
+        }
+    });
+})(jQuery);
+</script>
+</body>
+</html>
