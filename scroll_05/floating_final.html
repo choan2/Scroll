@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>floating_menu</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/css/layout.css">
+
+  <!-- JS -->
+  <script src="jquery-1.11.0.min.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="inner">
+      <h1><img src="./images/logo.gif" width="189" height="38" alt=""></h1>
+    </div>
+  </header>
+  <nav style="top: 145px;">
+    <ul>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#1">TOP</a></li>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#2">NEWS</a></li>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#3">PICTURE</a></li>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#4">SOUND</a></li>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#5">MOVIE</a></li>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#6">ANIMATION</a></li>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#7">HISTORY</a></li>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#8">DATA</a></li>
+      <li><a href="http://book.mynavi.jp/wd/sampledata/201503view/javascript/sample01/index.html#9">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <div id="page">
+    <div class="contents1"></div>
+    <div class="contents2"></div>
+    <div class="contents3"></div>
+  </div>
+</div>
+<script>
+	var float_px = 40;
+    $(document).ready(function () {
+        $(window).on("scroll", float_menu);        
+    });
+
+    function float_menu () {
+      $("nav").stop().animate({"top" :float_px + $(window).scrollTop()})
+    }
+</script>
+
+</body></html>
