@@ -75,3 +75,6 @@ $('#test').each(function () {
 
 ##이미지 변경 예제
 스크롤에 따라 연속적인 이미지를 **플립북 애니메이션**처럼 재생이 되도록 코딩해봅시다.[scroll_04/flip_animation.html](http://choan616.dothome.co.kr/study/scroll/scroll_04/flip_animation.html)
+
+##플로팅 메뉴 예제
+스크롤하면 따라오는 간단한 플로팅 스타일 메뉴를 코딩해봅시다.
