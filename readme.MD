@@ -79,4 +79,4 @@ $('#test').each(function () {
 ##플로팅 메뉴 예제 
 (예제 출처 [월간 웹디자이닝 2015년 3월호](http://book.mynavi.jp/wd/2015/03.html))
 
-스크롤하면 따라오는 간단한 플로팅 스타일 메뉴를 코딩해봅시다. [scroll_05/floating.html](http://choan616.dothome.co.kr/study/scroll_05/floating.html)
+스크롤하면 따라오는 간단한 플로팅 스타일 메뉴를 코딩해봅시다. [scroll_05/floating.html](http://choan616.dothome.co.kr/study/scroll/scroll_05/floating.html)
