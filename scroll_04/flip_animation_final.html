@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flip animation</title>
+	<style>
+		body {margin: 0;padding: 0;}
+		#wrap {margin: 0;padding: 0;width:100%;}
+		.flip {width: 300px;height: 300px;background:url('images/flip_animation.gif') no-repeat 0 0;position: fixed;background-size:cover;}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div class="flip"></div>
+	</div>
+	<script>
+		var height = 700;
+		$("body").css("height", height);
+		//$(window).on("scroll", flip );
+		$(window).on("mousewheel", flip );
+
+		function flip () {
+			var scrollpx = $(window).scrollTop();
+			var $flip = $(".flip");
+			if ( scrollpx > 49) {
+				$flip.css("background-position-y", "-14700px" );
+			} else {
+				$flip.css("background-position-y", -300 * scrollpx);
+			}
+		}
+	</script>
+</body>
+</html>
